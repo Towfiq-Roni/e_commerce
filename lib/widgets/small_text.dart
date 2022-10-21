@@ -1,3 +1,4 @@
+import 'package:e_commerce/utils/dimensions.dart';
 import 'package:flutter/material.dart';
 
 class SmallText extends StatelessWidget {
@@ -11,7 +12,7 @@ class SmallText extends StatelessWidget {
       {Key? key,
         this.color = const Color(0xFFccc7c5),
         required this.text,
-        this.size = 12,
+        this.size = 0,
         this.height=1.2,
         // this.overflow = TextOverflow.ellipsis
       })
@@ -24,7 +25,7 @@ class SmallText extends StatelessWidget {
         style: TextStyle(
           fontFamily: 'Roboto',
           color: color,
-          fontSize: size,
+          fontSize: size==0?Dimensions.font12:size,
           height: height,
           // fontWeight: FontWeight.w400,
         ));
