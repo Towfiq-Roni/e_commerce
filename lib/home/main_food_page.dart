@@ -32,10 +32,16 @@ class _MainFoodPageState extends State<MainFoodPage> {
                 children: [
                   Column(
                     children: [
-                      BigText(text: "Bangladesh", color: AppColors.mainColor,),
+                      BigText(
+                        text: "Bangladesh",
+                        color: AppColors.mainColor,
+                      ),
                       Row(
                         children: [
-                          SmallText(text: "Dhaka", color: Colors.black54,),
+                          SmallText(
+                            text: "Dhaka",
+                            color: Colors.black54,
+                          ),
                           Icon(Icons.arrow_drop_down_rounded)
                         ],
                       )
@@ -46,9 +52,13 @@ class _MainFoodPageState extends State<MainFoodPage> {
                       width: Dimensions.width45,
                       height: Dimensions.height45,
                       child: Icon(
-                        Icons.search, color: Colors.white, size: Dimensions.iconSize24,),
+                        Icons.search,
+                        color: Colors.white,
+                        size: Dimensions.iconSize24,
+                      ),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(Dimensions.radius15),
+                        borderRadius:
+                            BorderRadius.circular(Dimensions.radius15),
                         color: AppColors.mainColor,
                       ),
                     ),
@@ -58,9 +68,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
             ),
           ),
           Expanded(
-              child: SingleChildScrollView(
-                  child: FoodPageBody()
-              ),
+            child: SingleChildScrollView(child: FoodPageBody()),
           ),
         ],
       ),
