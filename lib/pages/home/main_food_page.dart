@@ -1,10 +1,9 @@
-import 'package:e_commerce/home/food_page_body.dart';
+import 'package:e_commerce/pages/home/food_page_body.dart';
 import 'package:e_commerce/utils/colors.dart';
 import 'package:e_commerce/widgets/big_text.dart';
 import 'package:e_commerce/widgets/small_text.dart';
 import 'package:flutter/material.dart';
-
-import '../utils/dimensions.dart';
+import 'package:e_commerce/utils/dimensions.dart';
 
 class MainFoodPage extends StatefulWidget {
   const MainFoodPage({Key? key}) : super(key: key);
@@ -17,6 +16,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
   @override
   Widget build(BuildContext context) {
     // print("Screen Height: "+MediaQuery.of(context).size.height.toString());
+    // print("Screen Width: "+MediaQuery.of(context).size.width.toString());
     return Scaffold(
       // extendBodyBehindAppBar: true,
       body: Column(
